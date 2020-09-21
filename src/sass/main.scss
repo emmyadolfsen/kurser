@@ -1,0 +1,93 @@
+$table-color: rgb(122, 143, 122);
+$table-color-light: lighten($table-color, 20%);
+$table-color-dark: darken($table-color, 15%);
+$bg-color: rgb(194, 207, 202);
+$bg-color-light: lighten($bg-color, 10%);
+$bg-color-darken: darken($bg-color, 2%);
+$font-color: rgb(34, 34, 34);
+body {
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: $bg-color;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kurser {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.title,
+#table,
+.table {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2px 0;
+}
+
+.code,
+.name,
+.prog,
+.plan {
+    background-color: $table-color;
+    padding: 6px;
+}
+
+.code {
+    flex-basis: 14%;
+}
+
+.name {
+    flex-basis: 15%;
+}
+
+.prog {
+    flex-basis: 10%;
+}
+
+.plan {
+    flex-basis: 54%;
+}
+
+.first {
+    background-color: $table-color-dark;
+}
+
+button {
+    float: right;
+}
+
+form {
+    float: left;
+    margin-bottom: 20rem;
+    width: 80%;
+    max-width: 800px;
+}
+
+form input[type=text] {
+    width: 70%;
+    float: left;
+    margin: 1%;
+    padding: 0.3rem;
+}
+
+input[type=submit] {
+    margin: 1rem 8rem;
+    padding: 6px;
+}
+
+label {
+    font-size: 20px;
+    margin: 1%;
+    margin-right: 2rem;
+    width: 12%;
+    float: left;
+}
+
+#update-syllabus {
+    width: 60%;
+}

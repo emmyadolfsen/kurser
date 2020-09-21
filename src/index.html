@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <title>Webb App</title>
+</head>
+
+<body>
+    <h1>Moment 5 - Webbutveckling 3</h1>
+    <h2>Kurser jag läst:</h2>
+    <section class="kurser">
+        <div class="title">
+            <span class="code first">Kurskod</span>
+            <span class="name first">Kursnamn</span>
+            <span class="prog first">Progression</span>
+            <span class="plan first">Kursplan</span>
+        </div>
+
+        <section class="kurser" id="courses">
+
+        </section>
+    </section>
+
+    <h2>Lägg till kurs:</h2>
+    <form>
+        <label for="coursecode">Kurskod:</label>
+        <input type="text" id="coursecode" name="coursecode"><br>
+        <label for="coursename">Kursnamn:</label>
+        <input type="text" id="coursename" name="coursename"><br>
+        <label for="progression">Progression:</label>
+        <input type="text" id="progression" name="progression"><br>
+        <label for="syllabus">Kursplan:</label>
+        <input type="text" id="syllabus" name="syllabus">
+        <input type="submit" id="submitCourse" value="Lägg till">
+    </form>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
