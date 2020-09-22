@@ -28,7 +28,7 @@ function getCourses() {
                 console.log(course.course_code)
                 coursesEl.innerHTML +=
                     `<div id="table">
-                <span id="${course.id}" class="code" onClick="setCourse(${course.id}); this.onclick=null;">${course.course_code}</span>
+                <span id="${course.id}" class="code hover" onClick="setCourse(${course.id}); this.onclick=null;">${course.course_code}</span>
                 <span class="name">${course.course_name}</span>
                 <span class="prog">${course.progression}</span>
                 <span class="plan">${course.syllabus}<button id="${course.id}" onClick="deleteCourse(${course.id})">Ta bort</button></span>

@@ -17,16 +17,25 @@ body {
     max-width: 900px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
 }
 
-.title,
-#table,
-.table {
+.title {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     margin: 2px 0;
+}
+
+.table,
+#table {
+    @extend .title;
+}
+
+.hover:hover,
+input[type=submit]:hover,
+button:hover {
+    cursor: pointer;
+    background-color: $table-color-dark;
 }
 
 .code,
@@ -90,4 +99,21 @@ label {
 
 #update-syllabus {
     width: 60%;
+}
+
+.table input[type=text] {
+    width: 90%;
+}
+
+.table {
+    .code,
+    .name,
+    .prog,
+    .plan {
+        margin-bottom: 1rem;
+    }
+}
+
+.plan input[type=text] {
+    width: 80%;
 }
