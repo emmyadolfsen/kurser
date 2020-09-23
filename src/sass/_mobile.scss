@@ -1,0 +1,11 @@
+@media screen and (max-width: 1000px) {
+    body {
+        width: 96%;
+        display: block;
+        margin: auto;
+        font-size: 12px;
+    }
+    .plan {
+        flex-basis: 54%;
+    }
+}

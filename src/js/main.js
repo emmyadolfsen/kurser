@@ -21,7 +21,7 @@ submitCourse.addEventListener('click', addCourse);
 
 function getCourses() {
     coursesEl.innerHTML = '';
-    fetch('http://localhost:8888/REST/json.php')
+    fetch('http://raggmunkar.se/rest/json.php')
         .then(response => response.json())
         .then(data => {
             data.forEach(course => {
@@ -41,7 +41,7 @@ function getCourses() {
 }
 
 function deleteCourse(id) {
-    fetch('http://localhost:8888/REST/json.php?id=' + id, {
+    fetch('http://raggmunkar.se/rest/json.php?id=' + id, {
             method: 'DELETE',
         })
         .then(response => response.json())
@@ -60,7 +60,7 @@ function addCourse() {
     let course = { 'course_code': coursecode, 'course_name': coursename, 'progression': progression, 'syllabus': syllabus };
 
 
-    fetch('http://localhost:8888/REST/json.php', {
+    fetch('http://raggmunkar.se/rest/json.php', {
             method: 'POST',
             body: JSON.stringify(course),
         })
@@ -76,7 +76,7 @@ function setCourse(id) {
     console.log('update' + id)
     let newDivEl = document.getElementById('newDiv' + id)
 
-    fetch('http://localhost:8888/REST/json.php?id=' + id, {
+    fetch('http://raggmunkar.se/rest/json.php?id=' + id, {
             method: 'GET',
         })
         .then(response => response.json())
@@ -104,7 +104,7 @@ function updateCourse(id) {
 
     console.log(coursecode + coursename + progression + syllabus)
 
-    fetch('http://localhost:8888/REST/json.php?id=' + id, {
+    fetch('http://raggmunkar.se/rest/json.php?id=' + id, {
             method: 'PUT',
             body: JSON.stringify(course),
         })

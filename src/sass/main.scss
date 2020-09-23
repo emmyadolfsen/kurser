@@ -44,18 +44,19 @@ button:hover {
 .plan {
     background-color: $table-color;
     padding: 6px;
+    margin: 1px;
 }
 
 .code {
-    flex-basis: 14%;
+    flex-basis: 7%;
 }
 
 .name {
-    flex-basis: 15%;
+    flex-basis: 23%;
 }
 
 .prog {
-    flex-basis: 10%;
+    flex-basis: 9%;
 }
 
 .plan {
@@ -63,6 +64,7 @@ button:hover {
 }
 
 .first {
+    margin: 1px;
     background-color: $table-color-dark;
 }
 
@@ -117,3 +119,5 @@ label {
 .plan input[type=text] {
     width: 80%;
 }
+
+@import './mobile';

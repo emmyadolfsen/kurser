@@ -30,6 +30,7 @@ function sassTask() {
         .pipe(cleanCSS())
         .pipe(sourcemaps.write('.'))
         .pipe(dest('pub/css'))
+
 }
 
 /*
